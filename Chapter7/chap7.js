@@ -1,0 +1,90 @@
+// document.getElementById("lefteye").style.backgroundColor = "purple";
+// document.getElementById("head").style.transform = "rotate(15deg)";
+// document.getElementById("body").style.border = "2px black solid";
+// document.getElementById("mouth").style.borderRadius = "4px";
+// document.getElementById("righteye").style.border = "4px yellow dotted";
+// document.getElementById("leftarm").style.backgroundColor = "#ff00ff";
+// document.getElementById("body").style.color = "#ff0000";
+// document.getElementById("head").style.borderTop = "5px black solid";
+
+/* 
+  Now it's your turn!
+  Can you figure out how to make the following changes 
+  with JavaScript?
+*/
+
+// tilt Douglas's head to the other side
+
+// make Douglas's nose round
+
+// make Douglas's right arm green
+
+// make Douglas's lips pink
+
+/*
+  Solutions
+*/
+
+// document.getElementById("head").style.transform = "rotate(-15deg)";
+// document.getElementById("nose").style.borderRadius = "50%";
+// document.getElementById("rightarm").style.backgroundColor = "green";
+// document.getElementById("mouth").style.backgroundColor = "pink";
+
+
+
+var rightEye = document.getElementById("righteye");
+var leftEye = document.getElementById("lefteye");
+var leftArm = document.getElementById("leftarm");
+var rightArm = document.getElementById("rightarm")
+
+rightEye.addEventListener("click", moveUpDown);
+leftEye.addEventListener("click", moveUpDown);
+leftArm.addEventListener("click", moveRightLeft);
+rightArm.addEventListener("click", fistPump);
+
+
+function moveUpDown(e) {
+  var robotPart = e.target;
+  var top = 0;
+
+  var id = setInterval(frame, 10) // draw every 10ms
+
+  function frame() {
+    robotPart.style.top = top + '%';    
+    top++;
+    if (top === 20){
+      clearInterval(id);
+    }
+  }
+  
+}
+
+
+function moveRightLeft(e) {
+  var robotPart = e.target;
+  var left = 0;
+  var id = setInterval(frame, 10) // draw every 10ms
+  function frame() {
+    robotPart.style.left = left + '%';
+    left++;
+    if (left === 70){
+      clearInterval(id);
+    }
+  }
+}
+
+function fistPump(e) {
+    var robotPart = e.target;
+    var top = 0;
+  
+    var id = setInterval(frame, 15) // draw every 1000ms
+  
+    function frame() {
+      robotPart.style.top = top + '%';    
+      top++;
+      if (top === 36){
+        clearInterval(id);
+      }
+    }
+    
+  }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+body {
+    background-image: url("forest.jpeg");
+    background-color: #D1F2EB;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    position:initial;
+    text-align: center;
+    color: #EAFAF1;
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    position: inherit;
+    background-color: #A2D9CE;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    color: #0B5345;
+}
+
+
+
+#total {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    color: #E8F8F5;
+    position:relative;
+}
+
+#checkout{
+    background-color: #9FE2BF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    font-size: 1.2rem;
+    color:#008080;
+    position: inherit;
+    border-radius: 12px;
+
+}
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    color: #E8F8F5;
+    text-align: center;
+}
